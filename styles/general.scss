@@ -1,2 +1,9 @@
-@forward "variables"
+@use "variables" as var;
+
+/*General rules*/
+*{
+    font-family: var.$font;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
