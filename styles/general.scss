@@ -1,9 +1,15 @@
 @use "variables" as var;
 
+/*Properties*/
+@each $cn, $cv in var.$color{
+    .color-#{$cn}{
+        color: $cv;
+    }
+}
+
 /*General rules*/
 *{
     font-family: var.$font;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-

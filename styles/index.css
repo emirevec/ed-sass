@@ -1,7 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
-/*Reglas generales*/
-h1 {
+/*Properties*/
+.color-primary {
+  color: #0A2FF1;
+}
+
+.color-alternative {
+  color: #04146C;
+}
+
+.color-secondary {
+  color: #3ffff3;
+}
+
+/*General rules*/
+* {
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=index.css.map */
