@@ -1,4 +1,5 @@
 @use "variables" as var;
+@use "mixins" as mix;
 
 /*Properties*/
 @each $cn, $cv in var.$color{
