@@ -7,6 +7,12 @@
     }
 }
 
+@each $pn, $pv in var.$properties{
+    @each $cn, $cv in var.$color{
+        .#{$pn}-#{$cn}{#{$pv}: $cv}
+    }
+}
+
 /*General rules*/
 *{
     font-family: var.$font;

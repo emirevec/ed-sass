@@ -11,6 +11,42 @@
   color: #3ffff3;
 }
 
+.color-primary {
+  color: #0A2FF1;
+}
+
+.color-alternative {
+  color: #04146C;
+}
+
+.color-secondary {
+  color: #3ffff3;
+}
+
+.bg-primary {
+  background-color: #0A2FF1;
+}
+
+.bg-alternative {
+  background-color: #04146C;
+}
+
+.bg-secondary {
+  background-color: #3ffff3;
+}
+
+.border-primary {
+  border-color: #0A2FF1;
+}
+
+.border-alternative {
+  border-color: #04146C;
+}
+
+.border-secondary {
+  border-color: #3ffff3;
+}
+
 /*General rules*/
 * {
   font-family: "Inter", sans-serif;
