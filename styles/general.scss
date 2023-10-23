@@ -34,3 +34,16 @@ header p,
 .unstyled{
     list-style: none;
 }
+
+html, body, main{
+    width: 100%;
+}
+
+header{
+    height: 100vh;
+    @include mix.flexbox;
+}
+
+img{
+    max-width: 100%;
+}
