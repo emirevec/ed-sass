@@ -12,3 +12,10 @@
     flex-wrap: $fw;
     gap: $g;
 }
+
+@mixin position($p: relative, $x: 0, $y:0, $x-axis: left, $y-axis: top, $z: 0){
+    position: $p;
+    #{$x-axis}: $x;
+    #{$y-axis}: $y;
+    z-index: $z;
+}
