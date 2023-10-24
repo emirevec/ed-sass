@@ -1,1 +1,25 @@
+@forward "general";
+@use "mixins" as mix;
 
+nav{
+    @include mix.flexbox($fd:column, $ai:flex-start, $g:1em);
+    @include mix.normalize($pv:1em);
+    position: absolute;
+    height: 25vh;
+    border: solid 1px black;
+    background-color: white
+}
+
+.btn{    
+    @include mix.position(absolute, .5em, .5em, right);
+    height: 2em;
+    width: 2em;
+    @extend .bg-primary;
+
+/*    &-burguer{
+        position: absolute;
+        right: 0;
+        top: .5rem;
+        height: 3px;
+    }*/
+}
