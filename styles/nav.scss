@@ -7,19 +7,40 @@ nav{
     position: absolute;
     height: 25vh;
     border: solid 1px black;
-    background-color: white
+    background-color: white;
+}
+
+.burguerline{
+    @extend .bg-alternative;
+    position: absolute;
+    top: .75em;
+    width: 2em;
+    height: 4px;
+    border-radius: 3px;
+    //transition
 }
 
 .btn{    
     @include mix.position(absolute, .5em, .5em, right);
+    z-index: 1;
     height: 2em;
     width: 2em;
-    @extend .bg-primary;
+    //agregar el transition
 
-/*    &-burguer{
-        position: absolute;
-        right: 0;
-        top: .5rem;
-        height: 3px;
-    }*/
+    &-burguer{
+        @extend .burguerline;
+
+        &::before{
+            @extend .burguerline;
+            content: '';
+            top: -10px;
+        }
+
+        &::after{
+            @extend .burguerline;
+            content: '';
+            top: 10px;
+            width: 1.65em;
+        }
+    }
 }
