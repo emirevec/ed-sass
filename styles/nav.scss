@@ -4,10 +4,16 @@
 nav{
     @include mix.flexbox($fd:column, $ai:flex-start, $g:1em);
     @include mix.normalize($pv:1em);
+    @extend .ease-2;
     position: absolute;
     height: 25vh;
     border: solid 1px black;
     background-color: white;
+    transform: translatey(-100%);
+
+    &.active{ 
+    transform: translatey(0);
+    }
 }
 
 .burguerline{

@@ -52,7 +52,7 @@
   transition: all 0.25s ease;
 }
 
-.ease-2 {
+.ease-2, nav {
   transition: all 0.5s ease;
 }
 
@@ -181,6 +181,10 @@ nav {
   height: 25vh;
   border: solid 1px black;
   background-color: white;
+  transform: translatey(-100%);
+}
+nav.active {
+  transform: translatey(0);
 }
 
 .burguerline, .btn-burguer::after, .btn-burguer::before, .btn-burguer {
