@@ -12,12 +12,13 @@ nav{
 
 .burguerline{
     @extend .bg-alternative;
+    @extend .ease-4;
     position: absolute;
     top: .75em;
     width: 2em;
     height: 4px;
     border-radius: 3px;
-    //transition
+    
 }
 
 .btn{    
@@ -25,7 +26,7 @@ nav{
     z-index: 1;
     height: 2em;
     width: 2em;
-    //agregar el transition
+    
 
     &-burguer{
         @extend .burguerline;

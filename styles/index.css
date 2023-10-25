@@ -60,7 +60,7 @@
   transition: all 0.75s ease;
 }
 
-.ease-4 {
+.ease-4, .burguerline, .btn-burguer, .btn-burguer::before, .btn-burguer::after {
   transition: all 1s ease;
 }
 
