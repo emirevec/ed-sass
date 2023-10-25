@@ -14,6 +14,14 @@
     }
 }
 
+@each $t in var.$timings {
+    @for $i from 1 through 4{
+        .#{$t}-#{$i}{
+            @include mix.transition($i * .25s, $t);
+        }
+    }
+}
+
 /*General rules*/
 *{
     font-family: var.$font;

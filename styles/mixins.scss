@@ -19,3 +19,7 @@
     #{$y-axis}: $y;
     z-index: $z;
 }
+
+@mixin transition($duration: .25s, $timing: ease, $prop: all){
+    transition: $prop $duration $timing;
+}
