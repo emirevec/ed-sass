@@ -1,0 +1,16 @@
+@use "variables" as var;
+@use "mixins" as mix;
+
+header{
+    @include mix.flexbox($fd:column);
+    height: 100vh;
+
+    & img{
+        position: absolute;
+        bottom: 0;
+
+        &#logo{
+            @include mix.position(absolute, 1rem, 15vh);
+        }
+    }
+}
