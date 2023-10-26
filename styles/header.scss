@@ -11,7 +11,7 @@ header{
         bottom: 0;
 
         &#logo{
-            @include mix.position(absolute, 1rem, 15vh);
+            @include mix.position(absolute, 3rem, 8vh);
         }
     }
 }
