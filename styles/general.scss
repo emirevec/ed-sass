@@ -30,6 +30,7 @@ header p,
 }
 
 :is(header, nav, footer) a{
+    @extend .color-alternative;
     text-decoration: none;
 }
 
