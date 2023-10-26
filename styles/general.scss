@@ -2,12 +2,6 @@
 @use "mixins" as mix;
 
 /*Properties*/
-@each $cn, $cv in var.$color{
-    .color-#{$cn}{
-        color: $cv;
-    }
-}
-
 @each $pn, $pv in var.$properties{
     @each $cn, $cv in var.$color{
         .#{$pn}-#{$cn}{#{$pv}: $cv}
