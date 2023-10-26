@@ -23,8 +23,7 @@ nav{
     top: .75em;
     width: 2em;
     height: 4px;
-    border-radius: 3px;
-    
+    border-radius: 3px;    
 }
 
 .btn{    
@@ -32,7 +31,7 @@ nav{
     z-index: 1;
     height: 2em;
     width: 2em;
-    
+    cursor: pointer;
 
     &-burguer{
         @extend .burguerline;
