@@ -6,8 +6,8 @@ nav{
     @include mix.normalize($pv:1em);
     @extend .ease-2;
     position: absolute;
-    height: 25vh;
-    border: solid 1px black;
+    z-index: 1;
+    height: 22vh;
     background-color: white;
     transform: translatey(-100%);
 
