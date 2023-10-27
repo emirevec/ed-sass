@@ -1,3 +1,4 @@
+@forward "general";
 @use "variables" as var;
 @use "mixins" as mix;
 
@@ -6,12 +7,36 @@ header{
     height: 100vh;
     background: radial-gradient(circle at 50% -90%, map-get(var.$colorvar, first), white 58%);
 
+    & h1{
+        font-size: 4.8rem;
+        font-weight: 700;
+        color: map-get(var.$greys, first);
+    }
+
+    & p{
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: map-get(var.$greys, first);
+    }
+
+    & button{
+        @include mix.normalize($pv: .5rem);
+        @extend .bg-alternative;
+        width: 175px;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        border-radius: .3rem;
+        text-transform: uppercase;
+    }
+
     & img{
         position: absolute;
         bottom: 0;
 
         &#logo{
-            @include mix.position(absolute, 3rem, 8vh);
+            @include mix.position(absolute, 2rem, 4vh);
+            max-height: 2rem;
         }
     }
 }
