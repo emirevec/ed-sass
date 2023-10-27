@@ -2,12 +2,11 @@
 @use "mixins" as mix;
 
 nav{
-    @include mix.flexbox($fd:column, $ai:flex-start, $g:1em);
-    @include mix.normalize($pv:1em);
+    @include mix.flexbox($fd:column, $ai:flex-start,$jc:space-arraound, $g:1.5rem);
+    @include mix.normalize($pv:2rem);
+    @include mix.position(absolute,$z:1);
     @extend .ease-2;
-    position: absolute;
-    z-index: 1;
-    height: 22vh;
+    height: 20vh;
     background-color: white;
     transform: translatey(-100%);
 
@@ -24,17 +23,17 @@ nav{
     @extend .bg-alternative;
     @extend .ease-4;
     position: absolute;
-    top: .75em;
-    width: 2em;
+    top: .75rem;
+    width: 4rem;
     height: 4px;
     border-radius: 3px;    
 }
 
 .btn{    
-    @include mix.position(absolute, .5em, .5em, right);
+    @include mix.position(absolute, 1rem, 2rem, right);
     z-index: 1;
-    height: 2em;
-    width: 2em;
+    height: 4.5rem;
+    width: 4.5rem;
 
     &-burguer{
         @extend .burguerline;
@@ -49,7 +48,7 @@ nav{
             @extend .burguerline;
             content: '';
             top: 10px;
-            width: 1.65em;
+            width: 3rem;
         }
 
         &.open{
@@ -61,7 +60,7 @@ nav{
             }
 
             &::after{
-                width: 2em;
+                width: 4rem;
                 transform: rotate(-45deg) translate(3px, -10px);
             }
         }
