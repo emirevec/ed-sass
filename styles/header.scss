@@ -15,18 +15,6 @@ header{
         & h1{
             @extend .h;
         }
-
-        & button{
-            @include mix.normalize();
-            @extend .bg-alternative;
-            width: 20rem;
-            height: 4rem;
-            color: white;
-            font-size: 1.3rem;
-            font-weight: 600;
-            border-radius: 1rem;
-            text-transform: uppercase;
-        }
     }   
 
     & img{
