@@ -33,6 +33,21 @@ header p,
     margin: 0;
 }
 
+.h{
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: map-get(var.$greys, first);
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: map-get(var.$greys, first);
+    text-align: center;
+    padding: 2rem
+}
+
 :is(header, nav, footer) a{
     @extend .color-alternative;
     text-decoration: none;
