@@ -7,6 +7,10 @@ main{
         @include mix.flexbox($fd:column, $g:3rem);
         height: 100vh;
         
+        h3{
+            @extend .h;
+        }
+
         & div {
             @include mix.flexbox($fd:column, $g:4rem);
             
@@ -21,7 +25,30 @@ main{
         }
 
         &.testimonios{
-            height: 200vh;
+            height: 140vh;
+
         }
+    }
+}
+.card{
+    @include mix.flexbox($fd:column);
+    padding: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    background-color: map-get(var.$colorvar, fifth);
+    border-radius: 3rem;
+    box-shadow: 0 3px 3px 1px map-get(var.$greys, fifth);
+    
+    & img{
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    & p{
+        padding: 0;
+    }
+
+    & .nombre{
+        font-weight: 400;
     }
 }
