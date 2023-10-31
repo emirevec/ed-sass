@@ -55,6 +55,10 @@ img{
     max-height: 40vh;
 }
 
+li {
+    list-style: none
+}
+
 button{
     @include mix.normalize();
     @extend .bg-alternative;
