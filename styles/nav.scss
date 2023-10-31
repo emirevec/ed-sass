@@ -24,16 +24,16 @@ nav{
     @extend .ease-4;
     position: absolute;
     top: .75rem;
-    width: 4rem;
+    width: 32px;
     height: 4px;
     border-radius: 3px;    
 }
 
 .btn{    
-    @include mix.position(absolute, 1rem, 2rem, right);
+    @include mix.position(absolute, 2rem, 4vh, right);
     z-index: 1;
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 36px;
+    width: 36px;
 
     &-burguer{
         @extend .burguerline;
@@ -48,7 +48,7 @@ nav{
             @extend .burguerline;
             content: '';
             top: 10px;
-            width: 3rem;
+            width: 24px;
         }
 
         &.open{
@@ -60,7 +60,7 @@ nav{
             }
 
             &::after{
-                width: 4rem;
+                width: 32px;
                 transform: rotate(-45deg) translate(3px, -10px);
             }
         }
