@@ -28,3 +28,36 @@ header{
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    header{
+        background: radial-gradient(circle at 30% -65%, map-get(var.$colorvar, first), white 70%);
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        height: auto;
+        padding-top: 22vh;
+        & div{
+            top:auto;
+            gap: 0;
+        }
+
+        & div, img{
+            position: relative;
+            width: 45%;
+            height: 45%;
+        }
+        & img{
+            max-width: 500px;
+            &#logo{
+                max-width: 3rem;
+            }   
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header{
+        background: radial-gradient(circle at 0 -20%, map-get(var.$colorvar, first), white 50%);
+    }
+}
