@@ -24,11 +24,6 @@ main{
             }
         }
 
-        &:nth-child(1){
-            img{
-                order: -1;
-            }
-        }
     }
 }
 
@@ -49,11 +44,11 @@ main{
         width: 40%;
         border-radius: 50%;
     }
-
+    
     p{
         padding: 0;
     }
-
+    
     .nombre{
         font-weight: 400;
     }
@@ -67,6 +62,11 @@ main{
     main section{
         flex-direction: row;
         
+        &:nth-child(1){
+            img{
+                order: -1;
+            }
+        }
         div, img{
             width: 45%;
             gap: 0;
