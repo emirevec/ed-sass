@@ -31,7 +31,7 @@ header{
 
 @media screen and (min-width: 768px) {
     header{
-        background: radial-gradient(circle at 30% -65%, map-get(var.$colorvar, first), white 70%);
+        background: radial-gradient(circle at 25% -70%, map-get(var.$colorvar, first), white 70%);
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 2rem;
@@ -55,7 +55,10 @@ header{
 }
 
 @media screen and (min-width: 1200px) {
+    body{
+        background: radial-gradient(circle at 10% 0, map-get(var.$colorvar, first), white 20%);
+    }
     header{
-        background: radial-gradient(circle at 0 -20%, map-get(var.$colorvar, first), white 50%);
+        background: none;
     }
 }
