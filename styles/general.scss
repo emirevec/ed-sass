@@ -83,7 +83,17 @@ button{
     }
     img{
         max-width: 500px;
-    }   
+    }
+
+    header, section{
+        div:not(.testimonios, .card){
+            align-items: flex-start;
+
+            & .h, p{
+            text-align: left;
+            }   
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
