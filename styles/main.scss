@@ -3,7 +3,7 @@
 @use "mixins" as mix;
 
 main{
-    & section{
+    section{
         @include mix.flexbox($fd:column, $g:3rem);
         margin-bottom: 5rem;
         
@@ -11,19 +11,30 @@ main{
             @extend .h;
         }
 
-        & div {
+        div {
             @include mix.flexbox($fd:column, $g:4rem);
             
-            & h2, h3{
+            h2, h3{
                 @extend .h;
                 padding: 2rem;
             }
 
-            & span {
+            span {
                 font-size: 3rem;
             }
         }
+
+        &:nth-child(1){
+            img{
+                order: -1;
+            }
+        }
     }
+}
+
+.testimonios{
+    width: 100%;
+    gap: 0;
 }
 .card{
     @include mix.flexbox($fd:column);
@@ -34,16 +45,16 @@ main{
     border-radius: 3rem;
     box-shadow: 0 3px 3px 1px map-get(var.$greys, fifth);
     
-    & img{
+    img{
         width: 40%;
         border-radius: 50%;
     }
 
-    & p{
+    p{
         padding: 0;
     }
 
-    & .nombre{
+    .nombre{
         font-weight: 400;
     }
 }
@@ -56,16 +67,23 @@ main{
     main section{
         flex-direction: row;
         
-        & div, img{
+        div, img{
             width: 45%;
         }
     }
     
+    .card{
+        max-width: 330px;
+        max-height: 330px;
+    }
     .equipo{
-        display: block;
+        display: flex;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    
+    .card{
+        max-width: 440px;
+        max-height: 440px;
+    }
 }
