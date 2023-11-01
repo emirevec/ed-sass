@@ -6,6 +6,7 @@ footer{
     height: 50vh;
     background-color: map-get(var.$greys, first);
     color: white;
+    padding-bottom: 1rem;
     
     & ul{
         @include mix.flexbox($fd:column, $jc:space-between);
@@ -32,5 +33,19 @@ footer{
 @media screen and (min-width: 768px){
     footer ul:nth-child(2){
         order: -1;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    footer{
+        height: auto;
+
+        ul{
+            height: auto;
+            gap: 1rem;
+        }
+    }
+    #redes{
+        height: 50%;
     }
 }
