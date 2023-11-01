@@ -89,6 +89,10 @@ button{
         div:not(.testimonios, .card){
             align-items: flex-start;
 
+            p {
+                padding-left: 0;
+            }
+            
             & .h, p{
             text-align: left;
             }   

@@ -71,6 +71,12 @@ main{
             width: 45%;
             gap: 0;
         }
+
+        div {
+            h2, h3{
+                padding: 2rem 0;
+            }
+        }
     }
     
     .card{
