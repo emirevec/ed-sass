@@ -31,6 +31,11 @@ header p {
 :is(header, nav, footer) a{
     @extend .color-alternative;
     text-decoration: none;
+    transition: text-decoration 1s;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 html, body, main, header, nav{
