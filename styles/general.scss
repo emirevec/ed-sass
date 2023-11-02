@@ -88,6 +88,7 @@ button{
     background-color: map-get(var.$colorvar, fourth);
     border-radius: 1rem;
     z-index: 3;
+    display: none;
 
     div{
         position: absolute;

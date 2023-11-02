@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,22 @@
     <link rel="stylesheet" href="styles/index.css">
     <title>Agencia Digital</title>
 </head>
+
 <body>
     <nav>
         <a href="">About</a>
         <a href="">Testimonios</a>
         <a href="">Contacto</a>
     </nav>
-    <div class="btn"><div class="btn-burguer"></div></div>
+    <div class="btn">
+        <div class="btn-burguer"></div>
+    </div>
     <header>
         <img id="logo" src="./assets/AD.png" alt="Agencia Digital logo">
         <div>
             <h1>Creando Experiencia Y Marca</h1>
             <p>Agencia Digital Al Servicio Del Cliente Y De Su Marca.</p>
-            <button>Contáctanos</button>
+            <button onclick="abrir();">Contáctanos</button>
         </div>
         <img src="./assets/img1.png" alt="Desarrollo web">
     </header>
@@ -48,17 +52,20 @@
             <div class="card">
                 <img src="./assets/AndresGarcia.png" alt="Cliente destacado">
                 <p class="nombre">Andrés García</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae quaerat sint ipsam iure esse quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae quaerat sint ipsam iure
+                    esse quos.</p>
             </div>
             <div class="card">
                 <img src="./assets/VeraRodriguez.png" alt="Cliente destacado">
                 <p class="nombre">Vera Rodriguez</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae ut eos eligendi incidunt totam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae ut eos eligendi
+                    incidunt totam!</p>
             </div>
             <div class="card">
                 <img src="./assets/MariaSanchez.png" alt="Cliente destacado">
                 <p class="nombre">Maria Sanchez</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis assumenda sint corrupti earum necessitatibus expedita.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis assumenda sint corrupti earum
+                    necessitatibus expedita.</p>
             </div>
         </section>
         <section class="equipo">
@@ -66,7 +73,7 @@
             <div>
                 <h3>Formá parte de nuestro Equipo</h3>
                 <p>Visitá nuestro perfil de Linkedin</p>
-                <button>Contactanos</button>
+                <button onclick="abrir();">Contactanos</button>
             </div>
         </section>
     </main>
@@ -86,8 +93,18 @@
     </footer>
     <div id="modal">
         <p>Envianos un correo a <a href="">mail@mail.com</a></p>
-        <div></div>
+        <div onclick="cerrar();">x</div>
     </div>
+    <script>
+        function abrir() {
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function cerrar() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
     <script src="./js/index.js" type="module"></script>
 </body>
+
 </html>
