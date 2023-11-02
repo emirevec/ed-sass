@@ -77,6 +77,35 @@ button{
     color: map-get(var.$greys, first);
 }
 
+#modal{
+    @include mix.flexbox();
+    box-sizing: inherit;
+    position: fixed;
+    top: 35%;
+    left: 18%;
+    height: 20vh;
+    min-width: 60%;
+    background-color: map-get(var.$colorvar, fourth);
+    border-radius: 1rem;
+    z-index: 3;
+
+    div{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        width: 20px;
+        text-align: center;
+        font-size: 3rem;
+        border: black 1px solid;
+        border-radius: 2px;
+    }
+
+    a{
+        @extend .color-alternative;
+        font-weight: 700;
+    }
+}
+
 @media screen and (min-width: 768px) {
     html{
         font-size: 12px;
