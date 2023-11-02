@@ -94,7 +94,7 @@ button{
         position: absolute;
         top: 1rem;
         right: 1.5rem;
-        width: 20px;
+        width: 30px;
         text-align: center;
         font-size: 3rem;
         border: black 1px solid;
@@ -126,6 +126,12 @@ button{
             & .h, p{
             text-align: left;
             }   
+        }
+    }
+
+    #modal{
+        div{
+            width: 40px;
         }
     }
 }
