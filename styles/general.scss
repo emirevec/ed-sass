@@ -121,7 +121,7 @@ button{
     }
 
     header, section{
-        div:not(.testimonios, .card){
+        div:not(.testimonios, .card, .card-act){
             align-items: flex-start;
 
             p {
