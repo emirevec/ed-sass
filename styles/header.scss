@@ -55,10 +55,27 @@ header{
 }
 
 @media screen and (min-width: 1200px) {
+    @keyframes animate {
+        0%{
+            opacity: 0;
+            transform: scale(3, 3) translate(300px, 100px);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+        90%{
+            transform: scale(1.5, 1.5);
+        }
+    }
     body{
         background: radial-gradient(circle at 10% 0, map-get(var.$colorvar, first), white 20%);
     }
     header{
         background: none;
+    }
+
+    #logo{
+        animation-name: animate;
+        animation-duration: 5s;
     }
 }
